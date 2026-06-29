@@ -35,7 +35,7 @@ tr:hover{background:#15152a}
 .tl7{font-size:10px;color:#888}
 </style></head><body>
 <h1>🏊‍♂️ 철인3종 훈련 대시보드</h1>
-<div class="sub">업데이트: 2026-06-29 08:17 KST</div>
+<div class="sub">업데이트: 2026-06-29 20:26 KST</div>
 
 <div style="background:#13131f;border:1px solid #ffd56c44;border-radius:12px;padding:14px 16px;margin-bottom:16px">
   <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
@@ -43,7 +43,7 @@ tr:hover{background:#15152a}
     <span style="font-size:11px;color:#555">— 자전거 기반은 좋음. 러닝·브릭 비중 높여야 대가야 목표 달성 가능.</span>
   </div>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:12px">
-    <div><span style="color:#555">📅 오늘</span><br><span style="color:#ccc">🏊 자유수영 1500m (오후, 액티브 리커버리)</span></div>
+    <div><span style="color:#555">📅 오늘</span><br><span style="color:#ccc">🛌 휴식 (사랑니 발치 당일 D+0)</span></div>
     <div><span style="color:#555">🎯 다음 대회</span><br><span style="color:#ccc">D-59 🎯 sub-2:35 — 현재 2:49 예상, <span style="color:#ff6c6c">-15분 필요</span></span></div>
     <div style="grid-column:1/-1"><span style="color:#555">🔥 핵심 과제</span><br><span style="color:#ffd56c">14일 0회 — 자전거→런 전환 감각 저하 중</span></div>
   </div>
@@ -55,7 +55,7 @@ tr:hover{background:#15152a}
 <div class="card"><div class="val" style="color:#6affa0">1.1km</div><div class="label">7일 수영</div></div>
 <div class="card"><div class="val" style="color:#ffa06a">67km</div><div class="label">7일 자전거</div></div>
 <div class="card"><div class="val" style="color:#6ab4ff">14km</div><div class="label">7일 러닝</div></div>
-<div class="card"><div class="val" style="color:#ff6aff">596</div><div class="label">7일 누적부하</div></div>
+<div class="card"><div class="val" style="color:#ff6aff">567</div><div class="label">7일 누적부하</div></div>
 </div>
 
 <div class="section">🏁 현재 체력 기반 예상 완주 <span style="font-size:11px;color:#555;font-weight:400">(알고리즘 추정)</span></div>
@@ -182,7 +182,7 @@ const allSwim   = [0, 66, 44, 0, 3, 0, 0, 25, 24, 77, 0, 0, 0, 123, 0, 0, 0, 0, 
 const allBike   = [238, 0, 0, 0, 0, 0, 0, 0, 0, 381, 0, 0, 0, 0, 0, 518, 232, 0, 0, 0, 0, 0, 146, 243, 0, 0, 0, 0, 0, 0, 0, 0, 0, 179, 0, 0, 164, 88, 0, 0, 0, 0, 0, 0, 146, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 223, 0];
 const allRun    = [59, 0, 0, 0, 52, 54, 44, 0, 0, 466, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 104, 0, 0, 98, 0, 85, 0, 0, 0, 0, 96, 0, 76, 0, 0, 140, 0, 0, 0, 0, 126, 110, 0, 95, 110, 0, 101, 0, 0, 0, 0, 127, 0, 0, 93, 0, 0, 0];
 const allOther  = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-const raceDates = ["08-27", "06-28"];
+const raceDates = ["06-28", "08-27"];
 
 const slice = isMobile ? 30 : 60;
 const labels   = allLabels.slice(-slice);
@@ -277,12 +277,12 @@ new Chart(document.getElementById('tlChart'), {
 <div style="font-size:11.5px;color:#aaa;padding:0 14px 6px;line-height:1.5">🎯 회복 1주 — 전부 Easy. ADVISOR 규칙상 7/6 축적 블록 개시 전 재충전. 토요일 롱바이크로 바이크 볼륨 재개</div>
 <div style="font-size:10.5px;color:#777;padding:0 14px 8px">월 회복 수영 · 화 Easy 8km · 목 Easy 6~8km · 토 수영 개인강습+롱바이크 100km→전환런 2~3km</div>
 <table style="margin:0 8px 10px;width:calc(100% - 16px)"><tbody>
-<tr style="background:#0d2a0d"><td style="color:#fff;font-weight:600;white-space:nowrap">06-29 (월)</td><td style="color:#6affa0">🏊 자유수영 1500m (오후, 액티브 리커버리)</td></tr>
-<tr><td style="color:#888;font-weight:400;white-space:nowrap">06-30 (화)</td><td style="color:#ccc">🏃 Easy 런 8km</td></tr>
-<tr><td style="color:#888;font-weight:400;white-space:nowrap">07-01 (수)</td><td style="color:#ccc">🏊 수영 강습 06시</td></tr>
-<tr><td style="color:#888;font-weight:400;white-space:nowrap">07-02 (목)</td><td style="color:#ccc">🏃 빌드업 런 10~12km</td></tr>
-<tr><td style="color:#888;font-weight:400;white-space:nowrap">07-03 (금)</td><td style="color:#ccc">🏊 수영 강습 06시 (OW 가능 시 대체)</td></tr>
-<tr><td style="color:#888;font-weight:400;white-space:nowrap">07-04 (토)</td><td style="color:#ccc">🏃 러닝 8~10km + 🏊 수영 1:4 레슨</td></tr>
+<tr style="background:#0d2a0d"><td style="color:#fff;font-weight:600;white-space:nowrap">06-29 (월)</td><td style="color:#6affa0">🛌 휴식 (사랑니 발치 당일 D+0)</td></tr>
+<tr><td style="color:#888;font-weight:400;white-space:nowrap">06-30 (화)</td><td style="color:#ccc">🛌 휴식 (사랑니 발치 D+1)</td></tr>
+<tr><td style="color:#888;font-weight:400;white-space:nowrap">07-01 (수)</td><td style="color:#ccc">🛌 휴식 (사랑니 발치 D+2)</td></tr>
+<tr><td style="color:#888;font-weight:400;white-space:nowrap">07-02 (목)</td><td style="color:#ccc">🛌 휴식 (사랑니 발치 D+3)</td></tr>
+<tr><td style="color:#888;font-weight:400;white-space:nowrap">07-03 (금)</td><td style="color:#ccc">🏃 Easy 런 6~8km (수영 강습은 상처 보고 판단)</td></tr>
+<tr><td style="color:#888;font-weight:400;white-space:nowrap">07-04 (토)</td><td style="color:#ccc">🏃 런 8~10km + 🏊 수영 1:4 레슨 (상처 확인 후)</td></tr>
 <tr><td style="color:#888;font-weight:400;white-space:nowrap">07-05 (일)</td><td style="color:#ccc">🚴 자전거 60~70km 롱라이딩</td></tr>
 </tbody></table>
 </details>
@@ -492,5 +492,5 @@ new Chart(document.getElementById('tlChart'), {
 </div>
 </div>
 
-<div style="color:#2a2a3a;font-size:10px;margin-top:12px;text-align:center">sy-workspace · 2026-06-29 08:17 KST</div>
+<div style="color:#2a2a3a;font-size:10px;margin-top:12px;text-align:center">sy-workspace · 2026-06-29 20:26 KST</div>
 </body></html>
